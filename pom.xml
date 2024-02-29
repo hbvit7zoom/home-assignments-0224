@@ -12,6 +12,7 @@
     <modules>
         <module>lesson01</module>
         <module>lesson02</module>
+        <module>webinar01</module>
     </modules>
 
     <properties>
