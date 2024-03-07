@@ -1,0 +1,9 @@
+package ru.sberbank.jd.exception;
+
+public class MainArguments {
+    public static void main(String[] args) {
+        for (String arg : args) {
+            System.out.println(arg);
+        }
+    }
+}
