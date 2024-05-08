@@ -1,0 +1,13 @@
+package ru.sberbank.jd.model;
+
+import lombok.Builder;
+import lombok.Data;
+import ru.sberbank.jd.controller.input.SumInput;
+
+@Data
+@Builder
+public class Operation {
+    private String id;
+    private SumInput sumInput;
+    private String result;
+}
