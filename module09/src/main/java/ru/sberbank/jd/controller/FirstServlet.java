@@ -17,6 +17,8 @@ public class FirstServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String helloString = "Hello";
 
+        System.out.println("Hello Servlet is running");
+
         var param1 = req.getParameter("param1");
         var param2 = req.getParameter("param2");
 
