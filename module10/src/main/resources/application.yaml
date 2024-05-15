@@ -1,0 +1,5 @@
+server:
+  port: 8090
+
+app:
+  param1: ${CLIENT_APP_PARAM1:56}
