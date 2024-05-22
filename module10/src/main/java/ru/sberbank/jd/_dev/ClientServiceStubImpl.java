@@ -1,8 +1,7 @@
-package ru.sberbank.jd.service;
+package ru.sberbank.jd._dev;
 
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import ru.sberbank.jd.service.ClientService;
 
 @Slf4j
 public class ClientServiceStubImpl implements ClientService {
