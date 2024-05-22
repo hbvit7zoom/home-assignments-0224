@@ -1,0 +1,8 @@
+POST http://localhost:8080/tasks
+Content-Type: application/json;charset=UTF-8
+
+{
+  "description": "my description",
+  "summary": "First Task of the day",
+  "owner": "Nikita"
+}

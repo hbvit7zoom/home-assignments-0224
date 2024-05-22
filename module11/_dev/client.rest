@@ -1,0 +1,27 @@
+http://localhost:8080/hello
+
+###
+http://localhost:8080/first/hello
+
+###
+POST http://localhost:8080/hello
+Content-Type: application/json;charset=UTF-8
+
+{
+  "value1": "v1",
+  "value2": "v2",
+  "value3": "v3"
+}
+
+###
+http://localhost:8080/out?param1=value1&param2=value2&param3=value3
+
+###
+http://localhost:8080/out/params?param1=value1&param2=value2&param3=value3
+user-x: user x header
+
+###
+GET http://localhost:8080/out/params/all?param1=value1&param2=value2&param3=value3
+
+###
+http://localhost:8080/out/123
