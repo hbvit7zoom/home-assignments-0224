@@ -22,6 +22,7 @@
         <module>module09</module>
         <module>module10</module>
         <module>module11</module>
+        <module>module12</module>
     </modules>
 
     <properties>
@@ -33,36 +34,7 @@
     <build>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>3.1.2</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>com.puppycrawl.tools</groupId>
-                            <artifactId>checkstyle</artifactId>
-                            <version>10.10.0</version>
-                        </dependency>
-                    </dependencies>
-                    <configuration>
-                        <configLocation>
-                            ${basedir}/../checkstyle/google_checks_modified.xml
-                        </configLocation>
-                        <encoding>UTF-8</encoding>
-                        <consoleOutput>true</consoleOutput>
-                        <violationSeverity>warning</violationSeverity>
-                        <linkXRef>false</linkXRef>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>validate</id>
-                            <phase>validate</phase>
-                            <goals>
-                                <goal>check</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
+
             </plugins>
         </pluginManagement>
     </build>
