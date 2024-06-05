@@ -1,0 +1,17 @@
+GET http://localhost:8080/roles
+X-Login-Id: test-user
+X-Roles: ADMIN
+
+###
+POST http://localhost:8080/roles
+X-Login-Id: test-admin
+X-Roles: USER
+
+###
+GET http://localhost:8080/user/123
+X-Login-Id: test-admin
+X-Roles: USER
+
+### Http Basic
+GET http://localhost:8080/user/123
+Authorization: Basic dXNlcjpkNWVjZmYwOS1iOWQ3LTQwZmQtYWI5MS1lZTk3YmYxMGRkZmU=
